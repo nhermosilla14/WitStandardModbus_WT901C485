@@ -1,0 +1,19 @@
+[package]
+name = "witmotion-modbus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serial2 = "0.2"
+crc = "3.0"
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+bitflags = "2.4"
+
+[dev-dependencies]
+serial2 = "0.2"
+
+[lib]
+name = "witmotion_modbus"
+path = "src/lib.rs"
+
